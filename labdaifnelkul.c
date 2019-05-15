@@ -25,18 +25,18 @@ int main()
 					,"#############################################"};
 		
 	
-	int xlen=45-1;  ///a "pálya" szélessége-1
-	int ylen=20-1;		 ///a "pálya" magassága-1
+	int xlen=45-1; 
+	int ylen=20-1;		
 	
-	int i=1; ///számláló
+	int i=1; 
 	
 	
 	
-	int x=1,y=1; ///koordináták és kezdőérték adás
+	int x=1,y=1; 
 	while(1)
 	{
-		x=abs(xlen-i%(2*xlen)); ///x koordináták számítása
-		y=abs(ylen-i%(2*ylen)); ///y koordináták számítása
+		x=abs(xlen-i%(2*xlen)); 
+		y=abs(ylen-i%(2*ylen)); 
 		char v2[20][46];
 		for(int i=0;i<20;i++)
 		{
@@ -54,7 +54,7 @@ int main()
 
 
 
-void draw(char v[20][46], int x, int y, char c) ///Rajzolásért felelős függvény
+void draw(char v[20][46], int x, int y, char c) 
 {
 	system("clear");
 	v[y][x]=c;
